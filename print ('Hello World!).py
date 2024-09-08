@@ -71,23 +71,26 @@ else:
         print (f"the factorial {Num} is:", factorial)
 
 """
+"""
 # python program : list of even perfect square
 
 def find_even_perfect_squares(limit):
-    find_even_perfect_squares = []
+    even_perfect_squares = []
     i = 1
+
     while True:
         square = i * i
         if square >= limit:
             break
         if square % 2 == 0:
-            find_even_perfect_squares.append(square)
-            i += 1
-    return find_even_perfect_squares
+            even_perfect_squares.append(square)
+        i += 1
+    return even_perfect_squares
+
 
 # asks the user for a number (n). 
 try:
-    n = int(input("Input a number"))
+    n = int(input("Input a number "))
     if  n <=0:
         print("please enter a positive integere.")
     else:
@@ -97,4 +100,5 @@ try:
 except ValueError:
     print("invalid Input")
 
-    
+    """
+
