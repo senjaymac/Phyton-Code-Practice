@@ -101,4 +101,26 @@ except ValueError:
     print("invalid Input")
 
     """
+"""
+def two_sum(nums, target):
+    # Create a dictionary to store numbers and their indices
+    num_map = {}
+    
+    # Loop through the list
+    for i, num in enumerate(nums):
+        # Calculate the complement that we need to find
+        complement = target - num
+        
+        # If the complement exists in the dictionary, return the indices
+        if complement in num_map:
+            return [num_map[complement], i]
+        
+        # Otherwise, add the current number and its index to the dictionary
+        num_map[num] = i
 
+# Example usage:
+nums = [6, 2, 4, 4]
+target = 8
+print(two_sum(nums, target))  # Output: [0, 1]
+
+"""
