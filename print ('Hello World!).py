@@ -123,4 +123,38 @@ nums = [6, 2, 4, 4]
 target = 8
 print(two_sum(nums, target))  # Output: [0, 1]
 
+
+thislist = ["0apple", "1banana", "2cherry"]
+thislist.append("3orange")
+
+thislist.insert(4, "Watermelon")
+
+Tropical = {"0Mango, 1Pineapple, 3Papaya"}
+thislist.extend(Tropical)
+print(thislist)
+
+thislist2 = ["apple", "banana", "cherry"] #contents in the lists are mutable/changeable
+thistuple = ("kiwi", "orange") #this is a tuple and contents in this tuple are immutable
+thislist2.extend(thistuple)
+print(thislist2)
+
+del thislist[0] # delete 0Apple from the list
+print(thislist) 
+
+"""
+"""
+#get product of 2 numbers without using multiplication
+
+def multiply(n, m):
+    result = 0
+    for _ in range(abs(m)):
+        result += n
+
+        if m < 0:
+            result = -result
+        return result
+n = 3
+m = 2
+print(multiply(n , m))  
+
 """
