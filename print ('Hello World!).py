@@ -152,9 +152,32 @@ def multiply(n, m):
 
         if m < 0:
             result = -result
-        return result
+    return result
 n = 3
 m = 2
 print(multiply(n , m))  
 
 """
+
+#strings 
+first_name = "Joe"
+food = "pizza"
+Email = "joe@fake.com"
+
+print(f"you are {age} years old")
+print(f"you are buying {quantity} items")
+print(f"Your email is: {Email}")
+print(f"{first_name} is {age} and his favorite food is {food} you can contact him thru his email account: {Email}")
+
+
+#integeres
+age = 25
+quantity = 3
+
+#float
+GPA = 2.21
+Price = 19.50
+Distance = 10
+
+
+#Boolean
